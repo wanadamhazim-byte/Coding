@@ -1,0 +1,46 @@
+#include <iostream>
+#include <iomanip>
+#include <string.h>
+using namespace std;
+int main()
+{
+    char clothes[30];
+    double price,discount,totalpafterdisc, totalprice;
+    int quantity, code;
+    cout<<"Enter Code (1 = Baju Kurung,2 = Kebaya, 3 = Jubah:";
+    cin>>code;
+    cout<<"Enter Quantity:";
+    cin>>quantity;
+    switch (code)
+   {     
+    case 1: price = 210.90;
+        strcpy(clothes,"Baju Kurung");
+    break;
+    case 2 : price = 310.90;
+        strcpy(clothes,"Kebaya");
+    break;
+    case 3 :price = 250.90;
+        strcpy(clothes,"Jubah");
+    break;
+    default : cout<<"This Code is Invalid"<<endl;
+    return 0;
+     }   
+
+        totalprice = price*quantity;
+    if (totalprice > 500)
+         discount = totalprice*0.10;
+    else 
+        discount = 0;
+    totalpafterdisc = totalprice-discount;
+
+    cout<<"\n****************************";
+    cout<<"\nCode :"<<code;
+    cout<<"\ntypes :"<<clothes;
+    cout<<fixed<<setprecision(2)<<"\nTotal Prices :"<<totalprice;
+    cout<<fixed<<setprecision(2)<<"\nDiscount :"<< discount;
+    cout<<fixed<<setprecision(2)<<"\nTotal Price After Discount :"<<totalpafterdisc;
+    cout<<"\nThank You And Please Come Again";
+    cout<<"\n*******************************"<<endl;
+    return 0;
+       
+}

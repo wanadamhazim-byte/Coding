@@ -1,0 +1,41 @@
+#include <iostream>
+#include <string.h>
+using namespace std;
+
+int main() 
+{
+  char city[50];
+  cout<<"Enter City : ";
+  cin.getline(city,50);
+  
+  
+  { if(strcmp(city,"Jengka")==0)
+    cout<<"State:Pahang"<<endl;
+ else if(strcmp(city,"Sepanggar")==0)
+    cout<<"State:Sabah"<<endl;
+ else if(strcmp(city,"Samarahan")==0)
+    cout<<"State:Sarawak"<<endl;
+else  if(strcmp(city,"Shah Alam")==0)
+    cout<<"State:Selangor"<<endl;
+else  if(strcmp(city,"Arau")==0)
+    cout<<"State:Perlis"<<endl;
+else  if(strcmp(city,"Segamat")==0)
+    cout<<"State:Johor"<<endl;
+else  if(strcmp(city,"Kuala Pilah")==0)
+    cout<<"State:Negeri Sembilan"<<endl;
+else  if(strcmp(city,"Machang")==0)
+    cout<<"State:Kelantan"<<endl;
+else  if(strcmp(city,"Dungun")==0)
+    cout<<"State:Terengganu"<<endl;
+ else if(strcmp(city,"Bukit Mertajam")==0)
+    cout<<"State:Pulau Pinang"<<endl;
+else  if(strcmp(city,"Merbok")==0)
+    cout<<"State:Kedah"<<endl;
+ else if(strcmp(city,"Alor Gajah")==0)
+    cout<<"State:Melaka"<<endl;
+else  if(strcmp(city,"Puncak Alam")==0)
+    cout<<"State:Selangor"<<endl;
+  }
+    
+    return 0;
+}
